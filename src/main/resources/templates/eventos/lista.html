@@ -14,6 +14,7 @@
 		<h1>Lista de Eventos</h1>
 
 		<table>
+
 			<thead>
 				<tr>
 					<th>Id</th>
@@ -25,9 +26,9 @@
 			</thead>
 			<tbody>
 				<tr th:each="e : ${listaDaFernanda}">
-				
+
 					<td th:text="${e.id}">1</td>
-					<td th:text="${e.nome}">Aniversário de fefe</td>
+					<td th:text="${e.nome}"><span> href="/">Aniversário de fefe</span></td>
 					<td th:text="${e.local}">sonho</td>
 					<td th:text="${e.data}">23</td>
 					<td th:text="${e.horario}">00:00</td>

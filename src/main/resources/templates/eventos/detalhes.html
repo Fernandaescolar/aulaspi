@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
 <title>Eventos</title>
 </head>
 <body>
@@ -86,6 +89,10 @@
 									<td th:text="${c.id}">1</td>
 									<td th:text="${c.nome}">Thalin</td>
 									<td th:text="${c.rg}">123</td>
+
+									<td><a
+										th:href="@{/eventos/{idConvidado}/{idEvento}/apagar (idConvidado=${c.id}, idEvento=${evento.id})}"><i
+											class="material-icons">delete</i></a></td>
 								</tr>
 							</tbody>
 						</table>
